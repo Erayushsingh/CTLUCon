@@ -13,6 +13,7 @@
 
     <div class="container mx-auto p-8">
         <h1 class="text-3xl font-bold text-center mb-6">Conference Acceptance Letter Generator</h1>
+
         <div class="bg-white p-6 rounded-lg shadow-md mb-8">
             <label for="name" class="block text-sm font-semibold mb-2">Participant Name:</label>
             <input type="text" id="name" placeholder="Enter Full Name"
@@ -23,67 +24,75 @@
                 class="w-full p-3 border border-gray-300 rounded-md text-lg mb-6 focus:outline-none focus:ring-2 focus:ring-blue-500">
 
             <button onclick="generateLetter()"
-                class="w-full bg-green-500 text-white py-3 rounded-md text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">Generate
-                Letter</button>
+                class="w-full bg-green-500 text-white py-3 rounded-md text-lg hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+                Generate Letter
+            </button>
         </div>
 
         <div id="letter" class="letter bg-white p-6 rounded-lg shadow-md hidden">
-            <div class="flex justify-between items-center mb-6">
-                <img src="RAASHEE.jpeg" alt="RAASHEE Logo" class="w-24 h-auto rounded-full" />
+            <div class="flex justify-between">
+                <img src="Uol.jpeg" alt="RAASHEE Logo" class="w-24 h-auto rounded-full" />
+                <img src="A++.jpeg" alt="NIRF Logo" class="w-24 h-auto rounded-full" />
+            </div>
+
+            <div class="flex justify-center items-center mb-6">
                 <div class="text-center mx-6">
-                    <h2 class="text-2xl font-semibold">RAASHEE'25 An International Conference</h2>
-                    <p class="text-xl text-red-600 font-semibold">Department of Applied Sciences & Humanities, FOET,
-                        University of Lucknow</p>
+                    <h2 class="text-lg font-bold">UNIVERSITY OF LUCKNOW</h2>
+                    <p class="text-lg font-bold">FACULTY OF ENGINEERING AND TECHNOLOGY</p>
+                    <p>Second Campus Jankipuram Extension, Lucknow-226031 (U.P.), India</p>
+
+                    <hr class="border-0 h-1 bg-black " />
+
+                    <p class="font-semibold">International Conference on</p>
+                    <p class="font-semibold">Recent Advances In Applied Sciences & Humanities In Evolution of
+                        Engineering 2025</p>
+                    <p class="font-semibold">7th & 8th February 2025, Lucknow, India,<a href="http://www.raashee.in"
+                            class="text-blue-600">www.raashee.in</a></p>
+
+
+                    <p class="text-right mt-4">27th Jan, 2025</p>
+
+                    <div class="relative text-center mt-6">
+                        <p class="font-bold text-lg z-10">ACCEPTANCE LETTER</p>
+                        <hr class="border-0 h-[0.7px] bg-black w-1/3 mx-auto " />
+                    </div>
+
+
                 </div>
-                <img src="Nirf.jpeg" alt="NIRF Logo" class="w-24 h-auto rounded-full" />
+
             </div>
 
-            <div class="flex justify-between mb-6">
-                <div>
-                    <p class="text-lg font-bold">Dr. Deepak Gupta</p>
-                    <p class="text-center text-lg font-bold">(Convenor)</p>
-                </div>
-                <div class="text-right">
-                    <p class="text-lg font-bold"><strong>email:</strong> raashee.foet@gmail.com</p>
-                    <p class="text-lg font-bold"><strong>website:</strong> www.raashee.in</p>
-                </div>
+            <p class="text-lg mb-4">Dear <span id="letter-name">[Name]</span>,</p>
+            <p class="text-lg">
+                <span class="ml-6">Thank</span>you for your submission to the RAASHEE-2025. We are pleased to inform you thet your paper titled
+                "<span id="letter-topic" class="font-bold text-black">[Topic]</span>" has been provisionally accepted as
+                a full paper by the conference organizing committee
+                of the International Conference on Recent Advances In Applied Sciences & Humanities In Evolution of
+                Engineering (RAASHEE 2025). According to the conference regulations, please note that, your paper will pass through the conference's
+                review process and once we receive
+                comments from the reviewers, you will be intimated for the same.
+
+            </p>
+
+            <p class="text-lg ml-6">We would like to thank you for your contribution to RAASHEE-25 and look
+                forward to seeing you in RAASHEE-25</p>
+
+            <p class="text-lg mt-4">With warm regards,</p>
+
+
+            <div class="flex flex-col items-end">
+                <p class="text-lg font-semibold ">(Dr. Deepak Gupta)</p>
+                <p class="text-lg">Convenor</p>
+                <p class="text-lg ">RAASHEE'25</p>
+                <p class="text-lg ">gupta_deepak@lkouniv.ac.in</p>
+                <p class="text-lg">Contact: 9415945708</p>
             </div>
-
-            <p class="text-xl mb-4">Dear <span id="letter-name">[Name]</span>,</p>
-            <p class="text-xl mb-4 ">We are pleased to inform you that your paper "<span id="letter-topic"
-                    class="font-bold text-black">[Topic]</span>" has
-                been accepted for presentation at the <span class="text-red-600 font-semibold">"An International
-                    Conference on Recent
-                    Advances in Applied Science & Humanities
-                    in Evolution of Engineering (RAASHEE-2025)."</span></p>
-
-            <p class="text-xl font-bold">An International Meet on Feb 7th and 8th organized by
-                Department of Applied Science & Humanities, FOET,
-                University of Lucknow</p>
-
-            <h3 class="text-xl font-semibold text-blue-600 mt-6 ">Event Details:</h3>
-            <p class="text-lg"><strong>Conference Name:</strong> <span
-                    class="text-red-600 font-semibold">RAASHEE-2025</span></p>
-            <p class="text-lg"><strong>Date:</strong> <span class="text-red-600 font-semibold">7th & 8th February,
-                    2025</span></p>
-            <p class="text-lg mb-4"><strong>Venue:</strong> <span class="text-red-600 font-semibold">Vishwakarma
-                    Auditorium, Faculty of Engineering and Technology, University of Lucknow, New Campus, Jankipuram
-                    Extension, Lucknow-226031, Uttar Pradesh</span></p>
-
-            <p class="text-lg mb-2">Looking forward to seeing you at the conference.</p>
-
-            <div class="flex flex-col justify-center items-end mb-6">
-                <img src="sign.jpeg" alt="Signature" class="w-32 h-auto mr-4" />
-                <div>
-                    <p class="text-lg font-semibold">Dr. Deepak Gupta</p>
-                    <p class="text-lg">(Convenor)</p>
-                </div>
-            </div>
-
-
+            
+           
             <button id="download-btn" onclick="downloadLetter()"
-                class="bg-blue-600 text-white py-3 px-6 rounded-md text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400">Download
-                PDF</button>
+                class="bg-blue-600 text-white py-3 px-6 rounded-md text-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 mt-6">
+                Download PDF
+            </button>
         </div>
     </div>
 
@@ -102,12 +111,11 @@
         }
 
         function downloadLetter() {
-           
             document.getElementById('download-btn').style.display = 'none';
 
             const element = document.getElementById('letter');
             const options = {
-                margin: 0.5,  
+                margin: 0.5,
                 filename: 'Conference_Acceptance_Letter.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: {
@@ -120,15 +128,13 @@
                     format: 'letter',
                     orientation: 'portrait'
                 },
-                exclude: ['#download-btn'] 
+                exclude: ['#download-btn']
             };
 
-            
             html2pdf().from(element).set(options).save().then(function () {
                 document.getElementById('download-btn').style.display = 'inline-block';
             });
         }
-
     </script>
 
 </body>
