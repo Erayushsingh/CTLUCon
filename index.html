@@ -39,7 +39,7 @@
                 <div class="text-center mx-6">
                     <h2 class="text-xl font-bold">UNIVERSITY OF LUCKNOW</h2>
                     <p class="text-xl font-bold">FACULTY OF ENGINEERING AND TECHNOLOGY</p>
-                    <p class="text-lg">Second Campus Jankipuram Extension, Lucknow-226031 (U.P.), India</p>
+                    <p class="text-lg">Second Campus,Jankipuram Extension, Lucknow-226031 (U.P.), India</p>
 
                     <hr class="border-0 h-1 bg-black " />
 
@@ -117,9 +117,10 @@
             document.getElementById('download-btn').style.display = 'none';
 
             const element = document.getElementById('letter');
+            const name = document.getElementById('name').value;
             const options = {
                 margin: 0.5,
-                filename: 'Conference_Acceptance_Letter.pdf',
+                filename: `${name}_RAASHEE'25.pdf`,
                 image: { type: 'jpeg', quality: 0.98 },
                 html2canvas: {
                     dpi: 300,
